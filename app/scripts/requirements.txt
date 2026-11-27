@@ -1,0 +1,2 @@
+# For the helper scripts in this folder (icons.py, screenshot.py). Then: python -m playwright install chromium
+playwright==1.65.2

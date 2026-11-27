@@ -1,0 +1,21 @@
+{
+  "name": "arris-supabase-tests",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "description": "RLS, gate and PIN sign-in tests run against the practice Supabase project as real users.",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "2.117.3",
+    "@types/node": "^24.0.0",
+    "dotenv": "18.0.8",
+    "typescript": "^5.9.0",
+    "vitest": "5.0.4"
+  }
+}

@@ -1,0 +1,95 @@
+# Arris: what each signed-in session downloads.
+#
+# PowerSync reads the database as powersync_role and does not apply row-level
+# security, so this file repeats the Stage 2b read rules. The policies it
+# mirrors are in supabase/migrations/20261015120000_schema.sql:
+#
+#   * Staff read every job and its details, and the people list, when
+#     private.my_role() is not null.
+#   * The manager and the director also read devices.
+#
+# private.my_role() is not null when all of these hold:
+#   1. the JWT's sub is a row in people, and that person is active;
+#   2. the session's device (app_metadata.device_id, ignored when the JWT's amr
+#      says "password") is active in devices, if it has one;
+#   3. an operative's session has a device.
+#
+# pin_credentials, device_credentials and the private schema are never
+# mentioned here, and are not in the powersync publication.
+#
+# Checked against the PowerSync compiler (@powersync/service-sync-rules 0.43.0)
+# by powersync/tests. Run them after any change to this file.
+
+config:
+  edition: 3
+
+with:
+  # Who may read the workshop. Returns the caller's own id, or nothing.
+  #
+  # Two ways in:
+  #   * Manager or director, with no device on the session: an office
+  #     (password) session, or a JWT with no app_metadata.device_id.
+  #   * Anyone active, on a tablet session (not password) whose device is
+  #     still active.
+  #
+  # instr(amr, '"method":"password"') is how "amr contains password" is
+  # written here. Sync Streams cannot negate a subquery or a json_each()
+  # expansion, so the "not password" side has to be a plain comparison;
+  # instr() over the claim's JSON text checks every entry, as the policy's
+  # amr @> '[{"method":"password"}]' does.
+  staff_session: |
+    SELECT people.id FROM people
+    WHERE people.id = auth.user_id()
+      AND people.active = true
+      AND (
+        (
+          (people.role = 'manager' OR people.role = 'director')
+          AND (
+            instr(auth.parameter('amr'), '"method":"password"') > 0
+            OR (auth.parameter('app_metadata') ->> 'device_id') IS NULL
+          )
+        )
+        OR (
+          instr(auth.parameter('amr'), '"method":"password"') = 0
+          AND (auth.parameter('app_metadata') ->> 'device_id') IN (
+            SELECT devices.id FROM devices WHERE devices.active = true
+          )
+        )
+      )
+
+  # Who may read the device list: staff_session, limited to the manager and
+  # the director. On a tablet session they still need the tablet active.
+  office_session: |
+    SELECT people.id FROM people
+    WHERE people.id = auth.user_id()
+      AND people.active = true
+      AND (people.role = 'manager' OR people.role = 'director')
+      AND (
+        instr(auth.parameter('amr'), '"method":"password"') > 0
+        OR (auth.parameter('app_metadata') ->> 'device_id') IS NULL
+        OR (auth.parameter('app_metadata') ->> 'device_id') IN (
+          SELECT devices.id FROM devices WHERE devices.active = true
+        )
+      )
+
+streams:
+  # Everything a member of staff reads, on connect, for offline use.
+  workshop:
+    auto_subscribe: true
+    queries:
+      - SELECT * FROM people WHERE auth.user_id() IN staff_session
+      - SELECT * FROM jobs WHERE auth.user_id() IN staff_session
+      - SELECT * FROM job_people WHERE auth.user_id() IN staff_session
+      - SELECT * FROM job_stage_hours WHERE auth.user_id() IN staff_session
+      - SELECT * FROM materials WHERE auth.user_id() IN staff_session
+      - SELECT * FROM cuts WHERE auth.user_id() IN staff_session
+      - SELECT * FROM files WHERE auth.user_id() IN staff_session
+      - SELECT * FROM drawing_queries WHERE auth.user_id() IN staff_session
+      - SELECT * FROM qc WHERE auth.user_id() IN staff_session
+      - SELECT * FROM notes WHERE auth.user_id() IN staff_session
+      - SELECT * FROM history WHERE auth.user_id() IN staff_session
+
+  # The tablets list: office business.
+  devices:
+    auto_subscribe: true
+    query: SELECT * FROM devices WHERE auth.user_id() IN office_session

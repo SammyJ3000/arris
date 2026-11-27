@@ -1,0 +1,19 @@
+{
+  "name": "arris-powersync-tests",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "description": "Compiles powersync/sync-config.yaml with PowerSync's own compiler and checks who would receive what. Runs offline.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@powersync/service-sync-rules": "0.43.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "5.0.4"
+  }
+}

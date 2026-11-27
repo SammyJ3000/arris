@@ -1,0 +1,105 @@
+/* Datum, direction B "Drawing Office". Every colour, size, duration and curve in the
+   prototype comes from here. Light mode is locked on purpose: the use scene is a
+   workshop tablet under bright overhead light and an office laptop. */
+
+:root {
+  color-scheme: light;
+
+  /* Paper and ink */
+  --paper: #e9e7e0;          /* the desk the sheet sits on */
+  --sheet: #f7f6f1;          /* the drawing sheet */
+  --sheet-2: #efede6;        /* recessed panels, column bodies */
+  --sheet-3: #e4e1d8;        /* pressed state, skeletons */
+  --ink: #1b1a17;
+  --ink-2: #4a4845;          /* secondary text, 8:1 on sheet */
+  --ink-3: #6b6861;          /* tertiary text, 5:1 on sheet, never under 14px */
+  --rule: #cdc9bf;           /* hairline */
+  --rule-2: #b4afa3;         /* hairline, emphasised */
+
+  /* Drafting blue: current revision, primary action, approval stamp. Nothing else. */
+  --blue: #2b4ab3;
+  --blue-deep: #22398c;
+  --blue-wash: #e2e7f6;
+
+  /* Red pen: overdue, urgent, issue, blocked */
+  --red: #b0311d;
+  --red-wash: #f6e5e1;
+
+  /* Pencil amber: warnings that are not blocks */
+  --amber: #8a5600;
+  --amber-wash: #f5ead3;
+
+  /* Green: complete, in stock */
+  --green: #2f6b45;
+  --green-wash: #e1eee5;
+
+  /* Type */
+  --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --text-12: 0.75rem;
+  --text-13: 0.8125rem;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+  --text-18: 1.125rem;
+  --text-20: 1.25rem;
+  --text-22: 1.375rem;
+  --text-26: 1.625rem;
+  --text-32: 2rem;
+  --text-40: 2.5rem;
+  --text-56: 3.5rem;
+  --text-72: 4.5rem;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-body: 1.45;
+
+  /* Spacing, 4px base */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+
+  /* Radius: a drawing sheet has square corners. 2px takes the edge off ink. */
+  --radius: 2px;
+
+  /* Elevation: ink on paper does not float. One shadow, for things lifted off the sheet. */
+  --shadow-lift: 0 1px 0 rgb(27 26 23 / 0.06), 0 12px 32px -12px rgb(27 26 23 / 0.28);
+  --shadow-sheet: 0 1px 2px rgb(27 26 23 / 0.08), 0 24px 48px -24px rgb(27 26 23 / 0.35);
+
+  /* Touch targets */
+  --target: 48px;
+  --target-lg: 64px;
+  --target-xl: 80px;
+
+  /* Motion */
+  --dur-press: 120ms;
+  --dur-fast: 160ms;
+  --dur-ui: 220ms;
+  --dur-sheet: 420ms;
+  --dur-draw: 700ms;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Line weights, from the drawing office */
+  --line-hair: 1px;
+  --line-border: 1.5px;
+  --line-heavy: 2.5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-press: 0ms;
+    --dur-fast: 0ms;
+    --dur-ui: 0ms;
+    --dur-sheet: 0ms;
+    --dur-draw: 0ms;
+  }
+}

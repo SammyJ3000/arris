@@ -1,0 +1,203 @@
+import { column, Schema, Table } from '@powersync/web';
+// OR: import { column, Schema, Table } from '@powersync/react-native';
+
+const people = new Table(
+  {
+    // id column (text) is automatically included
+    slug: column.text, // text
+    name: column.text, // text
+    initials: column.text, // text
+    role: column.text, // text
+    team_role: column.text, // text
+    email: column.text, // text
+    active: column.integer, // bool
+    created_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const jobs = new Table(
+  {
+    // id column (text) is automatically included
+    number: column.integer, // int4
+    client: column.text, // text
+    ref: column.text, // text
+    piece: column.text, // text
+    type: column.text, // text
+    stage: column.text, // text
+    flag: column.text, // text
+    target_date: column.text, // date
+    install_date: column.text, // date
+    site_address: column.text, // text
+    site_contact: column.text, // text
+    site_phone: column.text, // text
+    version: column.integer, // int4
+    created_by: column.text, // uuid
+    created_at: column.text, // timestamptz
+    updated_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const job_people = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    person_id: column.text, // uuid
+    assigned_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const job_stage_hours = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    stage: column.text, // text
+    hours: column.text // numeric
+  },
+  { indexes: {} }
+);
+
+const materials = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    name: column.text, // text
+    category: column.text, // text
+    qty: column.text, // numeric
+    unit: column.text, // text
+    supplier: column.text, // text
+    status: column.text, // text
+    position: column.integer, // int4
+    updated_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const cuts = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    label: column.text, // text
+    material: column.text, // text
+    qty: column.integer, // int4
+    dims: column.text, // text
+    edging: column.text, // text
+    status: column.text, // text
+    comment: column.text, // text
+    position: column.integer, // int4
+    updated_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const files = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    category: column.text, // text
+    name: column.text, // text
+    storage_path: column.text, // text
+    revision: column.text, // text
+    superseded: column.integer, // bool
+    size_bytes: column.integer, // int8
+    uploaded_by: column.text, // uuid
+    uploaded_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const drawing_queries = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    raised_by: column.text, // uuid
+    raised_at: column.text, // timestamptz
+    device_name: column.text, // text
+    note: column.text, // text
+    photo_path: column.text, // text
+    queried_revision: column.text, // text
+    status: column.text, // text
+    resolved_by: column.text, // uuid
+    resolved_at: column.text, // timestamptz
+    resolved_revision: column.text // text
+  },
+  { indexes: {} }
+);
+
+const qc = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    checked: column.text, // _int2
+    defects: column.text, // text
+    signed_by: column.text, // uuid
+    signed_at: column.text, // timestamptz
+    updated_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const notes = new Table(
+  {
+    // id column (text) is automatically included
+    job_id: column.text, // text
+    person_id: column.text, // uuid
+    device_name: column.text, // text
+    at: column.text, // timestamptz
+    text: column.text // text
+  },
+  { indexes: {} }
+);
+
+const history = new Table(
+  {
+    // id column (text) is automatically included
+    seq: column.integer, // int8
+    job_id: column.text, // text
+    person_id: column.text, // uuid
+    device_id: column.text, // uuid
+    device_name: column.text, // text
+    action: column.text, // text
+    summary: column.text, // text
+    phrase: column.text, // text
+    stage: column.text, // text
+    version: column.integer, // int4
+    detail: column.text, // jsonb
+    at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+const devices = new Table(
+  {
+    // id column (text) is automatically included
+    name: column.text, // text
+    active: column.integer, // bool
+    registered_by: column.text, // uuid
+    registered_at: column.text, // timestamptz
+    revoked_by: column.text, // uuid
+    revoked_at: column.text, // timestamptz
+    last_sign_in_at: column.text // timestamptz
+  },
+  { indexes: {} }
+);
+
+export const AppSchema = new Schema({
+  people,
+  jobs,
+  job_people,
+  job_stage_hours,
+  materials,
+  cuts,
+  files,
+  drawing_queries,
+  qc,
+  notes,
+  history,
+  devices
+});
+
+export type Database = (typeof AppSchema)['types'];
+

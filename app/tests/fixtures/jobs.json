@@ -1,0 +1,1508 @@
+{
+ "captured": "2026-10-15T16:07:25+00:00",
+ "json": {
+  "J-1042": {
+   "assigned": [
+    "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "5bce5ce7-8144-c7d0-3cfe-be796b3c1bb6"
+   ],
+   "client": "Harbour Lane Hotel",
+   "cuts": [
+    {
+     "comment": "",
+     "dims": "2400 \u00d7 800",
+     "edging": "All edges",
+     "id": "db12db3e-8770-1762-44f7-b3be44bfeefb",
+     "label": "Desk top",
+     "material": "18mm oak veneered MDF",
+     "qty": 1,
+     "status": "complete"
+    },
+    {
+     "comment": "",
+     "dims": "800 \u00d7 1100",
+     "edging": "Long edges",
+     "id": "bbf08fbd-a410-d3fa-44bc-ff68e9ca18e9",
+     "label": "Front panels",
+     "material": "18mm oak veneered MDF",
+     "qty": 3,
+     "status": "complete"
+    },
+    {
+     "comment": "",
+     "dims": "1100 \u00d7 600",
+     "edging": "Front",
+     "id": "f69c20b1-ed9f-1131-0d82-69d910374c69",
+     "label": "Carcass sides",
+     "material": "18mm birch ply",
+     "qty": 4,
+     "status": "edged"
+    },
+    {
+     "comment": "",
+     "dims": "780 \u00d7 380",
+     "edging": "Front",
+     "id": "35d3be3d-2c6a-78bc-a43c-8e1b49f58620",
+     "label": "Shelves",
+     "material": "18mm birch ply",
+     "qty": 6,
+     "status": "cut"
+    },
+    {
+     "comment": "",
+     "dims": "1200 \u00d7 2100",
+     "edging": "None",
+     "id": "4a9583ef-4cb3-05d2-0869-608ca90bf129",
+     "label": "Back panel",
+     "material": "18mm oak veneered MDF",
+     "qty": 2,
+     "status": "pending"
+    },
+    {
+     "comment": "",
+     "dims": "396 \u00d7 180",
+     "edging": "All edges",
+     "id": "c17e44b6-8e55-a6d1-fdd1-7e64c0a5bb5d",
+     "label": "Drawer fronts",
+     "material": "18mm oak veneered MDF",
+     "qty": 6,
+     "status": "pending"
+    }
+   ],
+   "files": [
+    {
+     "category": "drawing",
+     "id": "7403fedf-9f38-e5d9-be96-fa40f7042358",
+     "name": "HLH-RD-01 Reception desk",
+     "revision": "B",
+     "sizeBytes": 2310000,
+     "storagePath": "jobs/J-1042/HLH-RD-01-rev-B.pdf",
+     "superseded": true,
+     "uploadedAt": "2026-10-03T13:20:00.000Z",
+     "uploadedBy": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+    },
+    {
+     "category": "drawing",
+     "id": "95f7d2a4-7ff5-dfc9-db15-e4066c4db7bc",
+     "name": "HLH-RD-01 Reception desk",
+     "revision": "C",
+     "sizeBytes": 2450000,
+     "storagePath": "jobs/J-1042/HLH-RD-01-rev-C.pdf",
+     "uploadedAt": "2026-10-06T10:30:00.000Z",
+     "uploadedBy": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+    }
+   ],
+   "flag": "None",
+   "history": [
+    {
+     "at": "2026-10-01T08:05:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Job created"
+    },
+    {
+     "at": "2026-10-03T13:20:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Drawing revision B approved"
+    },
+    {
+     "at": "2026-10-04T09:10:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Assigned Callum Reid and Tom Ashworth"
+    },
+    {
+     "at": "2026-10-06T10:30:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Drawing revision C approved"
+    },
+    {
+     "at": "2026-10-07T07:45:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "Moved to Materials"
+    },
+    {
+     "at": "2026-10-07T08:00:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm birch ply: Ordered"
+    },
+    {
+     "at": "2026-10-07T08:02:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm oak veneered MDF: Ordered"
+    },
+    {
+     "at": "2026-10-08T14:40:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "Soft-close drawer runners: Ordered"
+    },
+    {
+     "at": "2026-10-09T07:20:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm birch ply: In Stock"
+    },
+    {
+     "at": "2026-10-09T07:25:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm oak veneered MDF: In Stock"
+    },
+    {
+     "at": "2026-10-10T06:50:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm birch ply: Issued to Workshop"
+    },
+    {
+     "at": "2026-10-10T06:52:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "18mm oak veneered MDF: Issued to Workshop"
+    },
+    {
+     "at": "2026-10-10T07:10:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "cnc",
+     "text": "Moved to CNC / Machining, with 1 item not yet in stock"
+    },
+    {
+     "at": "2026-10-11T12:15:00.000Z",
+     "by": "42d79010-0482-7155-016f-336b96a92a4e",
+     "device": "Machine shop tablet",
+     "stage": "cnc",
+     "text": "Desk top: Cut"
+    },
+    {
+     "at": "2026-10-12T09:30:00.000Z",
+     "by": "42d79010-0482-7155-016f-336b96a92a4e",
+     "device": "Machine shop tablet",
+     "stage": "cnc",
+     "text": "Front panels: Cut"
+    },
+    {
+     "at": "2026-10-13T15:05:00.000Z",
+     "by": "42d79010-0482-7155-016f-336b96a92a4e",
+     "device": "Machine shop tablet",
+     "stage": "bench",
+     "text": "Moved to Bench Work"
+    },
+    {
+     "at": "2026-10-13T15:40:00.000Z",
+     "by": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+     "device": "Bench tablet",
+     "stage": "bench",
+     "text": "Desk top: Complete"
+    },
+    {
+     "at": "2026-10-14T08:20:00.000Z",
+     "by": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+     "device": "Bench tablet",
+     "stage": "bench",
+     "text": "Front panels: Complete"
+    },
+    {
+     "at": "2026-10-14T10:00:00.000Z",
+     "by": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+     "device": "Bench tablet",
+     "stage": "bench",
+     "text": "Carcass sides: Edged"
+    },
+    {
+     "at": "2026-10-14T13:45:00.000Z",
+     "by": "5bce5ce7-8144-c7d0-3cfe-be796b3c1bb6",
+     "device": "Bench tablet",
+     "stage": "bench",
+     "text": "Shelves: Cut"
+    },
+    {
+     "at": "2026-10-14T14:30:00.000Z",
+     "by": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+     "device": "Bench tablet",
+     "stage": "bench",
+     "text": "Added a note: \"Carcass glued up. Back panel waiting on veneer match.\""
+    }
+   ],
+   "hours": {
+    "bench": 22,
+    "cnc": 6,
+    "materials": 2,
+    "qc": 2,
+    "spray": 8
+   },
+   "id": "J-1042",
+   "installDate": "2026-10-28",
+   "materials": [
+    {
+     "category": "Sheet Goods",
+     "id": "32a03718-1e1b-c254-fe20-d558473fac9f",
+     "name": "18mm birch ply",
+     "qty": 8,
+     "status": "issued",
+     "supplier": "Brackenfold Timber",
+     "unit": "sheets"
+    },
+    {
+     "category": "Sheet Goods",
+     "id": "652b1df9-ddb9-67d5-b498-aea8c136d8ec",
+     "name": "18mm oak veneered MDF",
+     "qty": 4,
+     "status": "issued",
+     "supplier": "Brackenfold Timber",
+     "unit": "sheets"
+    },
+    {
+     "category": "Edging",
+     "id": "28269d52-55a3-6dbf-7c13-16f6b344cea2",
+     "name": "2mm ABS edging, oak",
+     "qty": 40,
+     "status": "stock",
+     "supplier": "Larchmere Panels",
+     "unit": "m"
+    },
+    {
+     "category": "Ironmongery",
+     "id": "61c0cec3-abba-d54c-a127-ba7d5a84bd11",
+     "name": "Soft-close drawer runners",
+     "qty": 6,
+     "status": "ordered",
+     "supplier": "Ridgeway Ironmongery",
+     "unit": "pairs"
+    },
+    {
+     "category": "Finishes",
+     "id": "e461666d-9f5e-adf1-0c42-eea1e7769a0f",
+     "name": "Water-based lacquer, matt",
+     "qty": 5,
+     "status": "stock",
+     "supplier": "Larchmere Panels",
+     "unit": "L"
+    }
+   ],
+   "notes": [
+    {
+     "at": "2026-10-14T14:30:00.000Z",
+     "by": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+     "device": "Bench tablet",
+     "id": "cd27f5be-b204-4065-b720-e90975ae8cb6",
+     "text": "Carcass glued up. Back panel waiting on veneer match."
+    }
+   ],
+   "number": 1042,
+   "piece": "Reception desk with back panel",
+   "ref": "HLH-RD-01",
+   "site": {
+    "address": "Harbour Lane Hotel, 3 Quayside Walk, Eastport",
+    "contact": "Martha Reyes",
+    "phone": "07700 900142"
+   },
+   "stage": "bench",
+   "targetDate": "2026-10-21",
+   "type": "Reception Desk",
+   "version": 20
+  },
+  "J-1048": {
+   "assigned": [
+    "3af163e6-6a4a-b92b-f735-0ecff0abc6aa"
+   ],
+   "client": "Brindle & Co Coffee",
+   "cuts": [],
+   "files": [
+    {
+     "category": "drawing",
+     "id": "b9cfa884-4389-8bb6-3fe7-400d0792c5c7",
+     "name": "BCC-SH-01 Shelving",
+     "revision": "A",
+     "sizeBytes": 980000,
+     "storagePath": "jobs/J-1048/BCC-SH-01-rev-A.pdf",
+     "uploadedAt": "2026-09-25T09:30:00.000Z",
+     "uploadedBy": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+    }
+   ],
+   "flag": "None",
+   "history": [
+    {
+     "at": "2026-09-24T08:10:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Job created"
+    },
+    {
+     "at": "2026-09-25T09:30:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Drawing revision A approved"
+    },
+    {
+     "at": "2026-09-25T09:35:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Assigned Kieran Lowe"
+    },
+    {
+     "at": "2026-09-26T07:15:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "Moved to Materials"
+    },
+    {
+     "at": "2026-09-28T07:00:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "cnc",
+     "text": "Moved to CNC / Machining"
+    },
+    {
+     "at": "2026-10-03T13:30:00.000Z",
+     "by": "42d79010-0482-7155-016f-336b96a92a4e",
+     "device": "Machine shop tablet",
+     "stage": "bench",
+     "text": "Moved to Bench Work"
+    },
+    {
+     "at": "2026-10-09T14:55:00.000Z",
+     "by": "3af163e6-6a4a-b92b-f735-0ecff0abc6aa",
+     "device": "Bench tablet",
+     "stage": "spray",
+     "text": "Moved to Spray Booth"
+    },
+    {
+     "at": "2026-10-13T10:40:00.000Z",
+     "by": "d29463da-7389-77aa-51a8-661115f9a5a5",
+     "device": "Spray booth tablet",
+     "stage": "qc",
+     "text": "Moved to Quality Check"
+    },
+    {
+     "at": "2026-10-14T14:15:00.000Z",
+     "by": "3af163e6-6a4a-b92b-f735-0ecff0abc6aa",
+     "device": "Bench tablet",
+     "stage": "qc",
+     "text": "Ticked 5 of 8 QC checks"
+    }
+   ],
+   "hours": {
+    "bench": 12,
+    "cnc": 3,
+    "qc": 1,
+    "spray": 5
+   },
+   "id": "J-1048",
+   "installDate": "2026-10-17",
+   "materials": [],
+   "notes": [],
+   "number": 1048,
+   "piece": "Retail shelving and counter front",
+   "qc": {
+    "checked": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "ref": "BCC-SH-01",
+   "site": {
+    "address": "Brindle & Co, 9 Fishergate Hill, Kettleby",
+    "contact": "Sam Okafor",
+    "phone": "07700 900855"
+   },
+   "stage": "qc",
+   "targetDate": "2026-10-15",
+   "type": "Shelving",
+   "version": 9
+  },
+  "J-1049": {
+   "assigned": [],
+   "client": "Kestrel House Offices",
+   "cuts": [],
+   "files": [
+    {
+     "category": "drawing",
+     "id": "7f5af797-8b1d-1168-72a0-88f5166a2f5d",
+     "name": "KHO-DR-05 Door schedule",
+     "revision": "B",
+     "sizeBytes": 1200000,
+     "storagePath": "jobs/J-1049/KHO-DR-05-rev-B.pdf",
+     "uploadedAt": "2026-09-23T10:15:00.000Z",
+     "uploadedBy": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+    }
+   ],
+   "flag": "None",
+   "history": [
+    {
+     "at": "2026-09-21T08:00:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Job created"
+    },
+    {
+     "at": "2026-09-23T10:15:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "new",
+     "text": "Drawing revision B approved"
+    },
+    {
+     "at": "2026-09-24T07:20:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "materials",
+     "text": "Moved to Materials"
+    },
+    {
+     "at": "2026-09-26T07:05:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "cnc",
+     "text": "Moved to CNC / Machining"
+    },
+    {
+     "at": "2026-09-30T15:10:00.000Z",
+     "by": "b7dbfa79-87a7-c856-f4c3-13062ae93ced",
+     "device": "Machine shop tablet",
+     "stage": "bench",
+     "text": "Moved to Bench Work"
+    },
+    {
+     "at": "2026-10-06T14:35:00.000Z",
+     "by": "9770aab1-432d-f3c3-099c-1e6779de4cc9",
+     "device": "Bench tablet",
+     "stage": "spray",
+     "text": "Moved to Spray Booth"
+    },
+    {
+     "at": "2026-10-10T11:20:00.000Z",
+     "by": "8b1b4e16-e39a-35be-75f0-546c3e572f76",
+     "device": "Spray booth tablet",
+     "stage": "qc",
+     "text": "Moved to Quality Check"
+    },
+    {
+     "at": "2026-10-14T15:00:00.000Z",
+     "by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+     "device": "Office",
+     "stage": "ready",
+     "text": "QC signed off. Ready for Delivery"
+    }
+   ],
+   "hours": {
+    "bench": 8,
+    "cnc": 4,
+    "qc": 1,
+    "spray": 6
+   },
+   "id": "J-1049",
+   "installDate": "2026-10-16",
+   "materials": [],
+   "notes": [],
+   "number": 1049,
+   "piece": "Meeting room doors \u00d7 4",
+   "qc": {
+    "checked": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "signedAt": "2026-10-14T15:00:00.000Z",
+    "signedBy": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+   },
+   "ref": "KHO-DR-05",
+   "site": {
+    "address": "Kestrel House, 18 Mill Lane, Millbridge",
+    "contact": "Owen Price",
+    "phone": "07700 900318"
+   },
+   "stage": "ready",
+   "targetDate": "2026-10-14",
+   "type": "Door",
+   "version": 8
+  }
+ },
+ "rows": {
+  "cuts": [
+   {
+    "comment": "",
+    "dims": "2400 \u00d7 800",
+    "edging": "All edges",
+    "id": "db12db3e-8770-1762-44f7-b3be44bfeefb",
+    "job_id": "J-1042",
+    "label": "Desk top",
+    "material": "18mm oak veneered MDF",
+    "position": 1,
+    "qty": 1,
+    "status": "complete",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "comment": "",
+    "dims": "800 \u00d7 1100",
+    "edging": "Long edges",
+    "id": "bbf08fbd-a410-d3fa-44bc-ff68e9ca18e9",
+    "job_id": "J-1042",
+    "label": "Front panels",
+    "material": "18mm oak veneered MDF",
+    "position": 2,
+    "qty": 3,
+    "status": "complete",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "comment": "",
+    "dims": "1100 \u00d7 600",
+    "edging": "Front",
+    "id": "f69c20b1-ed9f-1131-0d82-69d910374c69",
+    "job_id": "J-1042",
+    "label": "Carcass sides",
+    "material": "18mm birch ply",
+    "position": 3,
+    "qty": 4,
+    "status": "edged",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "comment": "",
+    "dims": "780 \u00d7 380",
+    "edging": "Front",
+    "id": "35d3be3d-2c6a-78bc-a43c-8e1b49f58620",
+    "job_id": "J-1042",
+    "label": "Shelves",
+    "material": "18mm birch ply",
+    "position": 4,
+    "qty": 6,
+    "status": "cut",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "comment": "",
+    "dims": "1200 \u00d7 2100",
+    "edging": "None",
+    "id": "4a9583ef-4cb3-05d2-0869-608ca90bf129",
+    "job_id": "J-1042",
+    "label": "Back panel",
+    "material": "18mm oak veneered MDF",
+    "position": 5,
+    "qty": 2,
+    "status": "pending",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "comment": "",
+    "dims": "396 \u00d7 180",
+    "edging": "All edges",
+    "id": "c17e44b6-8e55-a6d1-fdd1-7e64c0a5bb5d",
+    "job_id": "J-1042",
+    "label": "Drawer fronts",
+    "material": "18mm oak veneered MDF",
+    "position": 6,
+    "qty": 6,
+    "status": "pending",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   }
+  ],
+  "drawing_queries": [],
+  "files": [
+   {
+    "category": "drawing",
+    "id": "7403fedf-9f38-e5d9-be96-fa40f7042358",
+    "job_id": "J-1042",
+    "name": "HLH-RD-01 Reception desk",
+    "revision": "B",
+    "size_bytes": 2310000,
+    "storage_path": "jobs/J-1042/HLH-RD-01-rev-B.pdf",
+    "superseded": 1,
+    "uploaded_at": "2026-10-03 13:20:00.000000Z",
+    "uploaded_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+   },
+   {
+    "category": "drawing",
+    "id": "95f7d2a4-7ff5-dfc9-db15-e4066c4db7bc",
+    "job_id": "J-1042",
+    "name": "HLH-RD-01 Reception desk",
+    "revision": "C",
+    "size_bytes": 2450000,
+    "storage_path": "jobs/J-1042/HLH-RD-01-rev-C.pdf",
+    "superseded": 0,
+    "uploaded_at": "2026-10-06 10:30:00.000000Z",
+    "uploaded_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+   },
+   {
+    "category": "drawing",
+    "id": "b9cfa884-4389-8bb6-3fe7-400d0792c5c7",
+    "job_id": "J-1048",
+    "name": "BCC-SH-01 Shelving",
+    "revision": "A",
+    "size_bytes": 980000,
+    "storage_path": "jobs/J-1048/BCC-SH-01-rev-A.pdf",
+    "superseded": 0,
+    "uploaded_at": "2026-09-25 09:30:00.000000Z",
+    "uploaded_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+   },
+   {
+    "category": "drawing",
+    "id": "7f5af797-8b1d-1168-72a0-88f5166a2f5d",
+    "job_id": "J-1049",
+    "name": "KHO-DR-05 Door schedule",
+    "revision": "B",
+    "size_bytes": 1200000,
+    "storage_path": "jobs/J-1049/KHO-DR-05-rev-B.pdf",
+    "superseded": 0,
+    "uploaded_at": "2026-09-23 10:15:00.000000Z",
+    "uploaded_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731"
+   }
+  ],
+  "history": [
+   {
+    "action": "created",
+    "at": "2026-09-21 08:00:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "ed3e4c0b-fd1e-40d5-a673-313cd98ba974",
+    "job_id": "J-1049",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "created the job",
+    "seq": 1252,
+    "stage": "new",
+    "summary": "Job created",
+    "version": 1
+   },
+   {
+    "action": "drawing",
+    "at": "2026-09-23 10:15:00.000000Z",
+    "detail": "{\"revision\":\"B\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "b7576ca7-6e13-48ff-8d2f-dfd3ae29f51a",
+    "job_id": "J-1049",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "approved drawing revision B",
+    "seq": 1253,
+    "stage": "new",
+    "summary": "Drawing revision B approved",
+    "version": 2
+   },
+   {
+    "action": "stage",
+    "at": "2026-09-24 07:20:00.000000Z",
+    "detail": "{\"from\":\"new\",\"to\":\"materials\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "3fa2f7f1-e755-4b83-8930-6bb71da15d37",
+    "job_id": "J-1049",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to Materials",
+    "seq": 1254,
+    "stage": "materials",
+    "summary": "Moved to Materials",
+    "version": 3
+   },
+   {
+    "action": "created",
+    "at": "2026-09-24 08:10:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "126ab049-b243-432a-a2fa-dc7a6c0cba13",
+    "job_id": "J-1048",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "created the job",
+    "seq": 1255,
+    "stage": "new",
+    "summary": "Job created",
+    "version": 1
+   },
+   {
+    "action": "drawing",
+    "at": "2026-09-25 09:30:00.000000Z",
+    "detail": "{\"revision\":\"A\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "05262bc3-54f5-47af-b2dc-df66531aa6b3",
+    "job_id": "J-1048",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "approved drawing revision A",
+    "seq": 1256,
+    "stage": "new",
+    "summary": "Drawing revision A approved",
+    "version": 2
+   },
+   {
+    "action": "details",
+    "at": "2026-09-25 09:35:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "d417f621-0002-479e-ae64-a90e30282894",
+    "job_id": "J-1048",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "changed who's assigned",
+    "seq": 1257,
+    "stage": "new",
+    "summary": "Assigned Kieran Lowe",
+    "version": 3
+   },
+   {
+    "action": "stage",
+    "at": "2026-09-26 07:05:00.000000Z",
+    "detail": "{\"from\":\"materials\",\"to\":\"cnc\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "b726ad9c-0b2b-4188-b9f0-b64623901484",
+    "job_id": "J-1049",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to CNC / Machining",
+    "seq": 1258,
+    "stage": "cnc",
+    "summary": "Moved to CNC / Machining",
+    "version": 4
+   },
+   {
+    "action": "stage",
+    "at": "2026-09-26 07:15:00.000000Z",
+    "detail": "{\"from\":\"new\",\"to\":\"materials\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "59615bd1-6747-4768-98eb-fe65348badc9",
+    "job_id": "J-1048",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to Materials",
+    "seq": 1259,
+    "stage": "materials",
+    "summary": "Moved to Materials",
+    "version": 4
+   },
+   {
+    "action": "stage",
+    "at": "2026-09-28 07:00:00.000000Z",
+    "detail": "{\"from\":\"materials\",\"to\":\"cnc\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "ba489ad7-b77b-4260-a43d-f995a0f1fb7b",
+    "job_id": "J-1048",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to CNC / Machining",
+    "seq": 1261,
+    "stage": "cnc",
+    "summary": "Moved to CNC / Machining",
+    "version": 5
+   },
+   {
+    "action": "stage",
+    "at": "2026-09-30 15:10:00.000000Z",
+    "detail": "{\"from\":\"cnc\",\"to\":\"bench\"}",
+    "device_id": "508a3cec-ce46-2f7b-8f15-adbca8fedd3a",
+    "device_name": "Machine shop tablet",
+    "id": "3909b91d-16ad-4142-8a39-56307bd90b8b",
+    "job_id": "J-1049",
+    "person_id": "b7dbfa79-87a7-c856-f4c3-13062ae93ced",
+    "phrase": "moved it to Bench Work",
+    "seq": 1264,
+    "stage": "bench",
+    "summary": "Moved to Bench Work",
+    "version": 5
+   },
+   {
+    "action": "created",
+    "at": "2026-10-01 08:05:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "f52114f3-5551-42c5-b7aa-bb52773b00f4",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "created the job",
+    "seq": 1267,
+    "stage": "new",
+    "summary": "Job created",
+    "version": 1
+   },
+   {
+    "action": "drawing",
+    "at": "2026-10-03 13:20:00.000000Z",
+    "detail": "{\"revision\":\"B\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "2da51be9-42c5-44d2-8c83-3771e6d8a18f",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "approved drawing revision B",
+    "seq": 1269,
+    "stage": "new",
+    "summary": "Drawing revision B approved",
+    "version": 2
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-03 13:30:00.000000Z",
+    "detail": "{\"from\":\"cnc\",\"to\":\"bench\"}",
+    "device_id": "508a3cec-ce46-2f7b-8f15-adbca8fedd3a",
+    "device_name": "Machine shop tablet",
+    "id": "7eb9c428-19fb-4d3a-b639-d388a1d17884",
+    "job_id": "J-1048",
+    "person_id": "42d79010-0482-7155-016f-336b96a92a4e",
+    "phrase": "moved it to Bench Work",
+    "seq": 1270,
+    "stage": "bench",
+    "summary": "Moved to Bench Work",
+    "version": 6
+   },
+   {
+    "action": "details",
+    "at": "2026-10-04 09:10:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "82d81466-a394-473b-a250-a23fac2ab8a8",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "changed who's assigned",
+    "seq": 1274,
+    "stage": "new",
+    "summary": "Assigned Callum Reid and Tom Ashworth",
+    "version": 3
+   },
+   {
+    "action": "drawing",
+    "at": "2026-10-06 10:30:00.000000Z",
+    "detail": "{\"revision\":\"C\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "36892e99-e975-40fc-bf28-40be24d19420",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "approved drawing revision C",
+    "seq": 1279,
+    "stage": "new",
+    "summary": "Drawing revision C approved",
+    "version": 4
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-06 14:35:00.000000Z",
+    "detail": "{\"from\":\"bench\",\"to\":\"spray\"}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "170fb25e-a073-40df-b9e5-a5a0c8e72ea7",
+    "job_id": "J-1049",
+    "person_id": "9770aab1-432d-f3c3-099c-1e6779de4cc9",
+    "phrase": "moved it to Spray Booth",
+    "seq": 1280,
+    "stage": "spray",
+    "summary": "Moved to Spray Booth",
+    "version": 6
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-07 07:45:00.000000Z",
+    "detail": "{\"from\":\"new\",\"to\":\"materials\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "ec38d9c3-e696-4e20-9a2d-09bd4cf3b67f",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to Materials",
+    "seq": 1281,
+    "stage": "materials",
+    "summary": "Moved to Materials",
+    "version": 5
+   },
+   {
+    "action": "material",
+    "at": "2026-10-07 08:00:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "f6719617-2919-4812-bab3-14fbb49651e0",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm birch ply as Ordered",
+    "seq": 1282,
+    "stage": "materials",
+    "summary": "18mm birch ply: Ordered",
+    "version": 6
+   },
+   {
+    "action": "material",
+    "at": "2026-10-07 08:02:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "f400effc-bc66-4d3a-b634-9207e5c5e126",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm oak veneered MDF as Ordered",
+    "seq": 1283,
+    "stage": "materials",
+    "summary": "18mm oak veneered MDF: Ordered",
+    "version": 7
+   },
+   {
+    "action": "material",
+    "at": "2026-10-08 14:40:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "ac44a413-1fe2-4208-819b-c4e8783943a6",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked Soft-close drawer runners as Ordered",
+    "seq": 1289,
+    "stage": "materials",
+    "summary": "Soft-close drawer runners: Ordered",
+    "version": 8
+   },
+   {
+    "action": "material",
+    "at": "2026-10-09 07:20:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "dec26bf6-b99b-4a8a-8450-c4d83979ab26",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm birch ply as In Stock",
+    "seq": 1290,
+    "stage": "materials",
+    "summary": "18mm birch ply: In Stock",
+    "version": 9
+   },
+   {
+    "action": "material",
+    "at": "2026-10-09 07:25:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "fddaeaef-1298-4dd0-97cc-b58f4e45d1e9",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm oak veneered MDF as In Stock",
+    "seq": 1291,
+    "stage": "materials",
+    "summary": "18mm oak veneered MDF: In Stock",
+    "version": 10
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-09 14:55:00.000000Z",
+    "detail": "{\"from\":\"bench\",\"to\":\"spray\"}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "219b9cc5-7501-4887-8c29-ab48a8d3c01d",
+    "job_id": "J-1048",
+    "person_id": "3af163e6-6a4a-b92b-f735-0ecff0abc6aa",
+    "phrase": "moved it to Spray Booth",
+    "seq": 1295,
+    "stage": "spray",
+    "summary": "Moved to Spray Booth",
+    "version": 7
+   },
+   {
+    "action": "material",
+    "at": "2026-10-10 06:50:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "181c65a8-0002-4ba3-b2a9-8d1cc11b8be6",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm birch ply as Issued to Workshop",
+    "seq": 1296,
+    "stage": "materials",
+    "summary": "18mm birch ply: Issued to Workshop",
+    "version": 11
+   },
+   {
+    "action": "material",
+    "at": "2026-10-10 06:52:00.000000Z",
+    "detail": "{}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "7275c708-529a-495c-9415-6622214e3aa8",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "marked 18mm oak veneered MDF as Issued to Workshop",
+    "seq": 1297,
+    "stage": "materials",
+    "summary": "18mm oak veneered MDF: Issued to Workshop",
+    "version": 12
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-10 07:10:00.000000Z",
+    "detail": "{\"acknowledged\":[\"materials\"],\"from\":\"materials\",\"missingMaterials\":1,\"to\":\"cnc\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "e0d7f56a-59c7-4367-89fa-9911a064d557",
+    "job_id": "J-1042",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "moved it to CNC / Machining",
+    "seq": 1298,
+    "stage": "cnc",
+    "summary": "Moved to CNC / Machining, with 1 item not yet in stock",
+    "version": 13
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-10 11:20:00.000000Z",
+    "detail": "{\"from\":\"spray\",\"to\":\"qc\"}",
+    "device_id": "19a1ead2-fa7c-f29a-aaf7-80e518bcfcf5",
+    "device_name": "Spray booth tablet",
+    "id": "e40b723f-1641-45fd-a0c4-10e46bda9af0",
+    "job_id": "J-1049",
+    "person_id": "8b1b4e16-e39a-35be-75f0-546c3e572f76",
+    "phrase": "moved it to Quality Check",
+    "seq": 1302,
+    "stage": "qc",
+    "summary": "Moved to Quality Check",
+    "version": 7
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-11 12:15:00.000000Z",
+    "detail": "{}",
+    "device_id": "508a3cec-ce46-2f7b-8f15-adbca8fedd3a",
+    "device_name": "Machine shop tablet",
+    "id": "561a0037-0ea3-4d17-a3b1-d318f90f7d5a",
+    "job_id": "J-1042",
+    "person_id": "42d79010-0482-7155-016f-336b96a92a4e",
+    "phrase": "marked Desk top as cut",
+    "seq": 1305,
+    "stage": "cnc",
+    "summary": "Desk top: Cut",
+    "version": 14
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-12 09:30:00.000000Z",
+    "detail": "{}",
+    "device_id": "508a3cec-ce46-2f7b-8f15-adbca8fedd3a",
+    "device_name": "Machine shop tablet",
+    "id": "01e8bb00-4574-45ef-b9e8-266e743a1a1d",
+    "job_id": "J-1042",
+    "person_id": "42d79010-0482-7155-016f-336b96a92a4e",
+    "phrase": "marked Front panels as cut",
+    "seq": 1308,
+    "stage": "cnc",
+    "summary": "Front panels: Cut",
+    "version": 15
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-13 10:40:00.000000Z",
+    "detail": "{\"from\":\"spray\",\"to\":\"qc\"}",
+    "device_id": "19a1ead2-fa7c-f29a-aaf7-80e518bcfcf5",
+    "device_name": "Spray booth tablet",
+    "id": "c1a4a144-b46e-4fa3-a093-4b511656b6a0",
+    "job_id": "J-1048",
+    "person_id": "d29463da-7389-77aa-51a8-661115f9a5a5",
+    "phrase": "moved it to Quality Check",
+    "seq": 1315,
+    "stage": "qc",
+    "summary": "Moved to Quality Check",
+    "version": 8
+   },
+   {
+    "action": "stage",
+    "at": "2026-10-13 15:05:00.000000Z",
+    "detail": "{\"from\":\"cnc\",\"to\":\"bench\"}",
+    "device_id": "508a3cec-ce46-2f7b-8f15-adbca8fedd3a",
+    "device_name": "Machine shop tablet",
+    "id": "bb3b6f86-e18b-4377-959b-9c74ad4dad54",
+    "job_id": "J-1042",
+    "person_id": "42d79010-0482-7155-016f-336b96a92a4e",
+    "phrase": "moved it to Bench Work",
+    "seq": 1316,
+    "stage": "bench",
+    "summary": "Moved to Bench Work",
+    "version": 16
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-13 15:40:00.000000Z",
+    "detail": "{}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "ef78f712-b526-43ea-af51-45626ec00f20",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "phrase": "marked Desk top as complete",
+    "seq": 1317,
+    "stage": "bench",
+    "summary": "Desk top: Complete",
+    "version": 17
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-14 08:20:00.000000Z",
+    "detail": "{}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "7fd37ad4-a90d-4717-bd92-1a12c9b4ba59",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "phrase": "marked Front panels as complete",
+    "seq": 1318,
+    "stage": "bench",
+    "summary": "Front panels: Complete",
+    "version": 18
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-14 10:00:00.000000Z",
+    "detail": "{}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "53e4c51c-63ea-4ac8-a1c5-a8a513f7dc8b",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "phrase": "marked Carcass sides as edged",
+    "seq": 1320,
+    "stage": "bench",
+    "summary": "Carcass sides: Edged",
+    "version": 19
+   },
+   {
+    "action": "cut",
+    "at": "2026-10-14 13:45:00.000000Z",
+    "detail": "{}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "07bed91f-70c6-4ef9-bffb-ebad993f16c4",
+    "job_id": "J-1042",
+    "person_id": "5bce5ce7-8144-c7d0-3cfe-be796b3c1bb6",
+    "phrase": "marked Shelves as cut",
+    "seq": 1321,
+    "stage": "bench",
+    "summary": "Shelves: Cut",
+    "version": 20
+   },
+   {
+    "action": "qc-progress",
+    "at": "2026-10-14 14:15:00.000000Z",
+    "detail": "{\"checked\":[0,1,2,3,4]}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "0f4b4f7f-299e-423a-bd6e-38c1c50d906d",
+    "job_id": "J-1048",
+    "person_id": "3af163e6-6a4a-b92b-f735-0ecff0abc6aa",
+    "phrase": "ticked QC checks",
+    "seq": 1322,
+    "stage": "qc",
+    "summary": "Ticked 5 of 8 QC checks",
+    "version": 9
+   },
+   {
+    "action": "note",
+    "at": "2026-10-14 14:30:00.000000Z",
+    "detail": "{\"text\":\"Carcass glued up. Back panel waiting on veneer match.\"}",
+    "device_id": "20e8bc74-3f1e-4dc0-e220-50db0d88759a",
+    "device_name": "Bench tablet",
+    "id": "8f285923-0a7c-4aac-b386-58717f919e23",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "phrase": "added a note",
+    "seq": 1323,
+    "stage": "bench",
+    "summary": "Added a note: \"Carcass glued up. Back panel waiting on veneer match.\"",
+    "version": null
+   },
+   {
+    "action": "qc-signed",
+    "at": "2026-10-14 15:00:00.000000Z",
+    "detail": "{\"checked\":[0,1,2,3,4,5,6,7],\"from\":\"qc\",\"to\":\"ready\"}",
+    "device_id": null,
+    "device_name": "Office",
+    "id": "28734906-eddd-42f0-a970-7927912d359b",
+    "job_id": "J-1049",
+    "person_id": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "phrase": "signed off QC",
+    "seq": 1325,
+    "stage": "ready",
+    "summary": "QC signed off. Ready for Delivery",
+    "version": 8
+   }
+  ],
+  "job_people": [
+   {
+    "assigned_at": "2026-09-25 08:00:00.000000Z",
+    "id": "b9033de0-665f-4fb1-9932-8f67dce6fbdf",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6"
+   },
+   {
+    "assigned_at": "2026-09-25 08:00:00.000000Z",
+    "id": "d2759559-725b-442f-90b7-5aa937d6698e",
+    "job_id": "J-1042",
+    "person_id": "5bce5ce7-8144-c7d0-3cfe-be796b3c1bb6"
+   },
+   {
+    "assigned_at": "2026-09-25 08:00:00.000000Z",
+    "id": "64e4f45d-f37d-4e60-8ff5-01b8f71de99f",
+    "job_id": "J-1048",
+    "person_id": "3af163e6-6a4a-b92b-f735-0ecff0abc6aa"
+   }
+  ],
+  "job_stage_hours": [
+   {
+    "hours": "2",
+    "id": "068fa6d8-3079-405d-b527-da913f4c06e6",
+    "job_id": "J-1042",
+    "stage": "materials"
+   },
+   {
+    "hours": "6",
+    "id": "5b783e6d-cfe9-4f49-86b3-0c56c6b9a2b5",
+    "job_id": "J-1042",
+    "stage": "cnc"
+   },
+   {
+    "hours": "22",
+    "id": "60cc25fd-b776-4362-87f9-0534f504313f",
+    "job_id": "J-1042",
+    "stage": "bench"
+   },
+   {
+    "hours": "8",
+    "id": "95504678-d7d7-429e-b452-112bfdcd0b9f",
+    "job_id": "J-1042",
+    "stage": "spray"
+   },
+   {
+    "hours": "2",
+    "id": "2b2d5531-4219-42a5-bc6e-c81e357d1256",
+    "job_id": "J-1042",
+    "stage": "qc"
+   },
+   {
+    "hours": "3",
+    "id": "f66719be-3969-4c3c-aedb-48daf6d17c96",
+    "job_id": "J-1048",
+    "stage": "cnc"
+   },
+   {
+    "hours": "12",
+    "id": "dbb4c483-32c6-482a-a203-d84239506f49",
+    "job_id": "J-1048",
+    "stage": "bench"
+   },
+   {
+    "hours": "5",
+    "id": "9c1e2de0-2b08-404e-b2e8-a89b0d52394d",
+    "job_id": "J-1048",
+    "stage": "spray"
+   },
+   {
+    "hours": "1",
+    "id": "51ec3215-9db2-4b67-9bd2-b66a2fbf6a97",
+    "job_id": "J-1048",
+    "stage": "qc"
+   },
+   {
+    "hours": "4",
+    "id": "24f02344-b7ab-43d7-bcce-fb4829152175",
+    "job_id": "J-1049",
+    "stage": "cnc"
+   },
+   {
+    "hours": "8",
+    "id": "30cab1d4-5975-4837-8954-6cefb7f3aee0",
+    "job_id": "J-1049",
+    "stage": "bench"
+   },
+   {
+    "hours": "6",
+    "id": "6cc13afc-6450-4716-b108-c331ac56079e",
+    "job_id": "J-1049",
+    "stage": "spray"
+   },
+   {
+    "hours": "1",
+    "id": "96079a5c-f118-4060-a21f-c46814a5215e",
+    "job_id": "J-1049",
+    "stage": "qc"
+   }
+  ],
+  "jobs": [
+   {
+    "client": "Harbour Lane Hotel",
+    "created_at": "2026-10-01 08:00:00.000000Z",
+    "created_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "flag": "None",
+    "id": "J-1042",
+    "install_date": "2026-10-28",
+    "number": 1042,
+    "piece": "Reception desk with back panel",
+    "ref": "HLH-RD-01",
+    "site_address": "Harbour Lane Hotel, 3 Quayside Walk, Eastport",
+    "site_contact": "Martha Reyes",
+    "site_phone": "07700 900142",
+    "stage": "bench",
+    "target_date": "2026-10-21",
+    "type": "Reception Desk",
+    "updated_at": "2026-10-14 13:45:00.000000Z",
+    "version": 20
+   },
+   {
+    "client": "Brindle & Co Coffee",
+    "created_at": "2026-09-24 08:00:00.000000Z",
+    "created_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "flag": "None",
+    "id": "J-1048",
+    "install_date": "2026-10-17",
+    "number": 1048,
+    "piece": "Retail shelving and counter front",
+    "ref": "BCC-SH-01",
+    "site_address": "Brindle & Co, 9 Fishergate Hill, Kettleby",
+    "site_contact": "Sam Okafor",
+    "site_phone": "07700 900855",
+    "stage": "qc",
+    "target_date": "2026-10-15",
+    "type": "Shelving",
+    "updated_at": "2026-10-14 14:15:00.000000Z",
+    "version": 9
+   },
+   {
+    "client": "Kestrel House Offices",
+    "created_at": "2026-09-21 08:00:00.000000Z",
+    "created_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "flag": "None",
+    "id": "J-1049",
+    "install_date": "2026-10-16",
+    "number": 1049,
+    "piece": "Meeting room doors \u00d7 4",
+    "ref": "KHO-DR-05",
+    "site_address": "Kestrel House, 18 Mill Lane, Millbridge",
+    "site_contact": "Owen Price",
+    "site_phone": "07700 900318",
+    "stage": "ready",
+    "target_date": "2026-10-14",
+    "type": "Door",
+    "updated_at": "2026-10-14 15:00:00.000000Z",
+    "version": 8
+   }
+  ],
+  "materials": [
+   {
+    "category": "Sheet Goods",
+    "id": "32a03718-1e1b-c254-fe20-d558473fac9f",
+    "job_id": "J-1042",
+    "name": "18mm birch ply",
+    "position": 1,
+    "qty": "8",
+    "status": "issued",
+    "supplier": "Brackenfold Timber",
+    "unit": "sheets",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "category": "Sheet Goods",
+    "id": "652b1df9-ddb9-67d5-b498-aea8c136d8ec",
+    "job_id": "J-1042",
+    "name": "18mm oak veneered MDF",
+    "position": 2,
+    "qty": "4",
+    "status": "issued",
+    "supplier": "Brackenfold Timber",
+    "unit": "sheets",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "category": "Edging",
+    "id": "28269d52-55a3-6dbf-7c13-16f6b344cea2",
+    "job_id": "J-1042",
+    "name": "2mm ABS edging, oak",
+    "position": 3,
+    "qty": "40",
+    "status": "stock",
+    "supplier": "Larchmere Panels",
+    "unit": "m",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "category": "Ironmongery",
+    "id": "61c0cec3-abba-d54c-a127-ba7d5a84bd11",
+    "job_id": "J-1042",
+    "name": "Soft-close drawer runners",
+    "position": 4,
+    "qty": "6",
+    "status": "ordered",
+    "supplier": "Ridgeway Ironmongery",
+    "unit": "pairs",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   },
+   {
+    "category": "Finishes",
+    "id": "e461666d-9f5e-adf1-0c42-eea1e7769a0f",
+    "job_id": "J-1042",
+    "name": "Water-based lacquer, matt",
+    "position": 5,
+    "qty": "5",
+    "status": "stock",
+    "supplier": "Larchmere Panels",
+    "unit": "L",
+    "updated_at": "2026-10-15 11:22:31.596008Z"
+   }
+  ],
+  "notes": [
+   {
+    "at": "2026-10-14 14:30:00.000000Z",
+    "device_name": "Bench tablet",
+    "id": "cd27f5be-b204-4065-b720-e90975ae8cb6",
+    "job_id": "J-1042",
+    "person_id": "47ad95f7-93a5-0bea-c32d-01c2342bebb6",
+    "text": "Carcass glued up. Back panel waiting on veneer match."
+   }
+  ],
+  "qc": [
+   {
+    "checked": "[0,1,2,3,4]",
+    "defects": "",
+    "id": "6e8c4722-396b-4a72-b646-01c78448bf26",
+    "job_id": "J-1048",
+    "signed_at": null,
+    "signed_by": null,
+    "updated_at": "2026-10-14 14:15:00.000000Z"
+   },
+   {
+    "checked": "[0,1,2,3,4,5,6,7]",
+    "defects": "",
+    "id": "3be4083e-4ab7-42cb-ac31-8c3e205d9f78",
+    "job_id": "J-1049",
+    "signed_at": "2026-10-14 15:00:00.000000Z",
+    "signed_by": "ab78906c-6f08-efb8-75e5-4e7018f4d731",
+    "updated_at": "2026-10-14 15:00:00.000000Z"
+   }
+  ]
+ }
+}

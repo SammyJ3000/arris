@@ -1,0 +1,23 @@
+# Dependencies and build output
+node_modules/
+dist/
+dev-dist/
+*.tsbuildinfo
+
+# Secrets: only the example is committed
+.env
+.env.*
+!.env.example
+
+# Test and tool output
+test-results/
+playwright-report/
+coverage/
+capture/
+__pycache__/
+*.log
+
+# Local tooling
+.vercel
+supabase/.temp/
+.DS_Store
