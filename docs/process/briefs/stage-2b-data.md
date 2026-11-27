@@ -25,7 +25,7 @@ will talk to later.
   It holds `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` and nothing else.
 - **Where you may work.** Only inside `supabase/`, plus a new report file. Do not
   touch `app/`, `design/`, `docs/` or `capture/`, because another agent is working
-  there. Do not run git.
+  there.
 - **Target.** You may push migrations and deploy functions to the linked practice
   project. It holds fictional data only. There is no live
   project; do not create one.
@@ -33,11 +33,9 @@ will talk to later.
   07700 900xxx.
 - **Copy.** Every message a person might see is written in British English, for
   them, not for a developer. No em or en dashes in user-facing copy.
-- **Node.** Prefix commands with `PATH="/opt/homebrew/bin:$PATH"`. The system node
-  is too old.
 - **CLI.** `supabase` CLI 2.101 is linked already. `--linked` commands reach the
   database through a temporary login role, so no password is needed. Docker is
-  **not** installed. Deploy functions with `--use-api` if the default needs Docker.
+  not used. Deploy functions with `--use-api` if the default needs Docker.
 
 ## What to build
 
@@ -68,7 +66,7 @@ Build the tables from `architecture.md`, with RLS switched on for every one. Not
   not apply it again. PowerSync can retry uploads, so this has to hold.
 - **Sync publication.** Create a publication named `powersync` covering the tables
   the app reads. Do **not** create the PowerSync database role; that needs a password
-  Sam will set himself.
+  I will set myself.
 
 ### 2. Rules: changes go through functions
 
@@ -249,7 +247,7 @@ Also run `supabase db lint --linked` and fix what it raises.
 
 ## Report
 
-Write `docs/reports/stage-2b.md`. This is the one file outside `supabase/` you may
+Write `docs/process/reports/stage-2b.md`. This is the one file outside `supabase/` you may
 create. It should contain:
 
 - what you built

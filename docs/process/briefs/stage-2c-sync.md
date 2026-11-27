@@ -21,13 +21,12 @@ Same as Stage 2b:
 - Never read `.env*` files.
 - Never handle secret or service_role keys.
 - Never run `supabase projects api-keys`.
-- No git. Node needs the `PATH="/opt/homebrew/bin:$PATH"` prefix.
 
 `.env.local` holds `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY` and
 `VITE_POWERSYNC_URL`; Vite loads them, and you do not read the file. Do not change
 the database schema without recording why in the report; if a migration is truly
-needed, add a new one and push it. Do not change PowerSync dashboard settings. Sam
-deploys sync config by hand.
+needed, add a new one and push it. Do not change PowerSync dashboard settings. I
+deploy the sync config by hand.
 
 ## Phase 1: sync config, then stop
 
@@ -49,7 +48,7 @@ from Stage 2b:
   express that, say so plainly in the report. Don't paper over it.
 
 Verify every construct against the Supported SQL docs. Then **stop and report**,
-pasting the YAML in full. Sam will deploy it in the dashboard, and you will be
+pasting the YAML in full. I will deploy it in the dashboard, and you will be
 resumed.
 
 ## Phase 2: the PowerSync data source
@@ -95,7 +94,7 @@ resumed.
 
 ## Report
 
-Write `docs/reports/stage-2c.md`. It should cover:
+Write `docs/process/reports/stage-2c.md`. It should cover:
 - what you built
 - decisions written as draft entries for `docs/decisions.md`
 - what failed and how you fixed it

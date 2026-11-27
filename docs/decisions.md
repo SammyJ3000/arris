@@ -152,7 +152,7 @@ anything and restarted on Opus from the same brief; the app stage was nearly don
 and was left to finish. From here, a stage is split: the decision work is written
 down first, then built by a cheaper agent from that.
 
-<!-- Stage 2b: decisions made while building the database, reviewed 2026-10-15. Full context in docs/reports/stage-2b.md -->
+<!-- Stage 2b: decisions made while building the database, reviewed 2026-10-15. Full context in docs/process/reports/stage-2b.md -->
 
 ## 2026-10-15 · A job's id is its number, `J-1042`
 
@@ -311,7 +311,7 @@ and `authenticated` on new tables, sequences and functions in `public`
 **Why:** otherwise every future function is callable by anon until someone
 remembers to revoke it.
 
-<!-- Stage 2c: decisions made while connecting the app, reviewed 2026-10-15. Full context in docs/reports/stage-2c.md -->
+<!-- Stage 2c: decisions made while connecting the app, reviewed 2026-10-15. Full context in docs/process/reports/stage-2c.md -->
 
 ## 2026-10-15 · Sync streams repeat the RLS check row by row
 

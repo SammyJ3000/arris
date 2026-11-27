@@ -41,7 +41,7 @@ In progress. Stages 0 to 2 are done. Stage 3 is in design.
 
 What is missing today: creating a job, uploading and approving drawings, the
 Quality Check screen, delivery paperwork and the idle lock on tablets. The
-Stage 3 handover in `docs/handovers/stage-3-design.md` lists it all.
+Stage 3 handover in `docs/process/handovers/stage-3-design.md` lists it all.
 
 ## Screenshots
 
@@ -108,13 +108,13 @@ with no accounts.
 I built it with Claude Code, in stages, with AI agents doing the work and me
 reviewing each stage. The process is in `docs/`:
 
-- **Briefs** (`docs/briefs/`). Each stage starts with a written brief: what to
+- **Briefs** (`docs/process/briefs/`). Each stage starts with a written brief: what to
   build, the hard rules, what done means and what to report.
-- **Reports** (`docs/reports/`). Each agent writes back what it built, what
+- **Reports** (`docs/process/reports/`). Each agent writes back what it built, what
   failed and how it fixed it, what is left, and the test results.
 - **Decisions** (`docs/decisions.md`). Every real decision with its reason,
   including the wrong turns.
-- **Handovers** (`docs/handovers/`). What the next stage needs to know.
+- **Handovers** (`docs/process/handovers/`). What the next stage needs to know.
 - **Build log** (`docs/build-log.md`). Time per stage, and review follow ups.
 
 Tests gate every stage. By the end of Stage 2:
