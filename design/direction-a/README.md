@@ -91,9 +91,9 @@ from the left. A stub slides in from the same side to confirm. Under
 ## Running it
 
 ```
-PATH="/opt/homebrew/bin:$PATH" npm install
-PATH="/opt/homebrew/bin:$PATH" npm run build     # dist/index.html, self-contained
-PATH="/opt/homebrew/bin:$PATH" npm run dev
+npm install
+npm run build     # dist/index.html, self-contained
+npm run dev
 ```
 
 Screenshots: `python design/direction-a/scripts/screenshot.py` from the repo

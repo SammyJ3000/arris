@@ -9,7 +9,6 @@ const repoRoot = fileURLToPath(new URL("../..", import.meta.url));
 export function serverQuery<T = Record<string, unknown>>(sql: string): T[] {
   const out = execFileSync("supabase", ["db", "query", "--linked", "-o", "json", sql], {
     cwd: repoRoot,
-    env: { ...process.env, PATH: `/opt/homebrew/bin:${process.env.PATH ?? ""}` },
     encoding: "utf8",
     stdio: ["ignore", "pipe", "pipe"],
   });

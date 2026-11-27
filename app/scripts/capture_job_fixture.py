@@ -18,7 +18,9 @@ Run from the repo root (needs the Supabase CLI linked to the practice project):
 
 import json
 import os
+import shutil
 import subprocess
+import sys
 from datetime import datetime, timezone
 
 JOBS = ["J-1042", "J-1048", "J-1049"]
@@ -27,8 +29,10 @@ OUT = os.path.join(os.path.dirname(__file__), "..", "tests", "fixtures", "jobs.j
 
 
 def query(sql: str):
-    env = dict(os.environ, PATH="/opt/homebrew/bin:" + os.environ.get("PATH", ""))
-    out = subprocess.run(["supabase", "db", "query", "--linked", "-o", "json", sql], capture_output=True, text=True, env=env, check=True).stdout
+    supabase = shutil.which("supabase")
+    if not supabase:
+        sys.exit("The Supabase CLI is not on PATH. Install it and link the project, then run this again.")
+    out = subprocess.run([supabase, "db", "query", "--linked", "-o", "json", sql], capture_output=True, text=True, check=True).stdout
     data, _ = json.JSONDecoder().raw_decode(out[out.index("{"):])
     return data["rows"]
 

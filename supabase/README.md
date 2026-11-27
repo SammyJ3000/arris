@@ -83,7 +83,7 @@ sample id.
 
 ## Running things
 
-All commands from the repo root, with `PATH="/opt/homebrew/bin:$PATH"`.
+All commands from the repo root, with the Supabase CLI on your `PATH`.
 
 ```sh
 supabase migration list --linked                  # what is applied

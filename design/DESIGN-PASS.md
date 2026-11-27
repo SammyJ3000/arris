@@ -95,8 +95,6 @@ fit a tool for joinery and fit-out workshops. Not "Joinery Tracker".
   tablet and phone.
 - Use a hash route or in-app navigation so all six areas are reachable from a small,
   unobtrusive "prototype" menu.
-- Node: prefix every command with `PATH="/opt/homebrew/bin:$PATH"`. The default
-  node on this machine is too old.
 
 ## Check your work
 

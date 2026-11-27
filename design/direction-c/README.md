@@ -73,7 +73,7 @@ materials check on J-1047, the board with the Drawing Review lane and hours per
 stage, a conflict dialog, permission denied, and a failed send with a way out.
 All screens are reachable from the Prototype menu, bottom right.
 
-Build: `PATH="/opt/homebrew/bin:$PATH" npm install && npm run build` produces
+Build: `npm install && npm run build` produces
 `dist/index.html`, a single self-contained file.
 
 ## With more time
