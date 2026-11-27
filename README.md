@@ -274,7 +274,8 @@ npm run e2e:live  # resets the demo data before and after
 | `design/` | The design pass: three clickable prototypes and the shared sample data |
 | `docs/` | Brief, domain model, architecture, principles, decisions, briefs, reports, handovers |
 
-Screenshots and test videos are kept out of the repo.
+The README screenshots are in `docs/images/`. Test videos and the working
+screenshots from each stage are kept out of the repo.
 
 This repo was published from a private working copy, so earlier history is not
 included.
