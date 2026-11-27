@@ -36,7 +36,7 @@ the only place that decides what is allowed.
 | Files | Supabase Storage, private buckets, signed URLs | Drawings actually stored |
 | Drawings | PDF.js (`react-pdf`) | Opens on the floor, cached for offline |
 | Hosting | Vercel | |
-| Tests | Vitest (unit, and RLS tests run against the practice project as real users), Playwright (end-to-end, with video) | Prove the rules, film the flows |
+| Tests | Vitest (unit, and RLS tests run against the practice project as real users), Playwright (end-to-end, with video) | Prove the rules, record the flows |
 
 ## Identity
 

@@ -27,8 +27,8 @@ Motion is the animation library.
 ## 2026-10-14 · Its own product name
 
 **Decision:** brand it as a product, not a fictional firm.
-**Why:** this is the first piece of a business built around turning prototypes into
-real apps. Name candidates come out of the design pass.
+**Why:** it is a tool any joinery workshop could use, not the story of one firm.
+Name candidates come out of the design pass.
 
 ## 2026-10-14 · The design pass uses shared sample data
 
@@ -72,8 +72,8 @@ production by others, with one documented gotcha now written into the plan.
 
 **Decision:** `.claude/settings.json` denies reading any `.env` file and running
 the command that prints Supabase's secret keys.
-**Why:** it is the setup Sam describes to clients, so the build should actually
-use it. Note: it applies to Claude Code sessions opened in this folder, so the
+**Why:** a rule written only in a brief relies on the agent following it; a
+setting enforces it. Note: it applies to Claude Code sessions opened in this folder, so the
 same rules are also written into every agent brief.
 
 ## 2026-10-15 · Stage 2a: the data layer returns outcomes, never throws

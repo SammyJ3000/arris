@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-// The floor's one obvious path, filmed: sign in with a PIN, see the next job,
+// The floor's one obvious path, recorded: sign in with a PIN, see the next job,
 // pass it on, undo. Video is recorded for every run (see playwright.config.ts).
 // These run on the in-memory sample workshop (?source=memory), with the same
 // demo PINs as the server. live.spec.ts runs against the real back end.

@@ -13,7 +13,7 @@ Three jobs, in this order of importance:
 
 1. **Proof of standard.** "Built to an agency standard" has to be demonstrated, not
    claimed. Quality is the point, not a constraint.
-2. **Content.** The build is filmed and documented as it happens. See "Capture".
+2. **A record.** The build is documented as it happens. See "Record keeping".
 3. **Learning.** How hard this actually is, end to end.
 
 It is not a pitch, and it is not a client project.
@@ -31,7 +31,7 @@ good and most of it survives.
 
 ## What the rebuild has to demonstrate
 
-Each gap is both a requirement and a piece of content. None of them are fixed
+Each gap is a requirement, and each fix is written down. None of them are fixed
 silently.
 
 | # | The prototype | The rebuild |
@@ -65,18 +65,15 @@ on real auth, real storage, real files, offline capable, every state designed.
 
 **Out of scope:** reporting, exports, integrations, settings beyond the minimum.
 
-## Capture
+## Record keeping
 
-The content cannot be reconstructed afterwards.
+A record like this cannot be rebuilt afterwards, so it is kept as the work
+happens.
 
-- Screenshots and video when something breaks. Failures are the most valuable
-  footage.
 - `decisions.md`: every real decision, especially where the obvious approach was
   wrong.
-- `build-log.md`: time spent per stage, for "what it actually takes".
-
-Planned pieces: the before and after · what a prototype is missing · the one clever
-screen · what it actually takes.
+- `build-log.md`: what each stage produced, and the follow ups from review.
+- Screenshots and test video when something breaks.
 
 ## Hard constraints
 
@@ -84,6 +81,5 @@ screen · what it actually takes.
 - **No invented figures.**
 - **Sample data only.** No real jobs, clients, staff, addresses or phone numbers.
   Phone numbers use Ofcom's reserved drama range, 07700 900000 to 07700 900999.
-- **It must genuinely work.** Nothing faked for the camera.
-- **The prototype's code and screenshots stay out of this repo.** Any "before" shot
-  used in content is redacted first.
+- **It must genuinely work.** Nothing faked for a demo.
+- **The prototype's code and screenshots stay out of this repo.**
