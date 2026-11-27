@@ -8,8 +8,8 @@
 
 ## What it is
 
-I'm rebuilding a workshop job tracker as a production grade app. It started life
-as a prototype made with AI. The prototype looked like an app, but it could not
+Arris is an offline first rebuild of a workshop job tracker, and it is still in
+progress. It started life as a prototype made with AI. The prototype looked like an app, but it could not
 run a workshop. Login was three buttons. The drawing upload kept the file name
 and threw the file away. Two people editing one job meant the last one won, with
 no warning. Nothing worked offline.
@@ -28,6 +28,12 @@ to 07700 900999), so none of them can ring anyone.
 ## Status
 
 In progress. Stages 0 to 2 are done. Stage 3 is in design.
+
+What works today, on the sample data or a real backend: tablet sign in with a
+name and PIN, office sign in, My Jobs (the "next for you" screen on the floor),
+the job page with its drawing, the workshop board, the manager's Today view,
+raising a drawing query, conflicts when two people change the same job, and
+changes made with no signal that sync when it returns.
 
 | Stage | State |
 |---|---|
