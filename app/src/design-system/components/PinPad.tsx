@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Backspace } from "@phosphor-icons/react";
-import { useEffect, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 export interface PinPadProps {
   /** Called when four digits are in. Resolve to an error message to shake and clear. */
@@ -22,12 +22,9 @@ export function PinPad({ onComplete, hint = "Enter your four-digit PIN", disable
   const [checking, setChecking] = useState(false);
   const reduce = useReducedMotion();
 
-  useEffect(() => {
-    if (pin.length !== 4) return;
-    let cancelled = false;
+  const check = (full: string) => {
     setChecking(true);
-    Promise.resolve(onComplete(pin)).then((msg) => {
-      if (cancelled) return;
+    Promise.resolve(onComplete(full)).then((msg) => {
       setChecking(false);
       if (msg) {
         setError(msg);
@@ -35,17 +32,14 @@ export function PinPad({ onComplete, hint = "Enter your four-digit PIN", disable
         setPin("");
       }
     });
-    return () => {
-      cancelled = true;
-    };
-    // onComplete is stable enough; re-running on pin change is what we want.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pin]);
+  };
 
   const press = (d: string) => {
     if (disabled || checking || pin.length >= 4) return;
     setError(null);
-    setPin((p) => p + d);
+    const next = pin + d;
+    setPin(next);
+    if (next.length === 4) check(next);
   };
 
   return (

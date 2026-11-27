@@ -2,6 +2,43 @@
 // app will show the stored PDF; this stands in so the viewer and the gate have
 // something true to show. Revision B has the shorter back panel that C replaced.
 
+const ink = "var(--c-ink)";
+const thin = "var(--c-ink-2)";
+
+function Dim({ x1, y1, x2, y2, label, offset = 0, vertical = false }: { x1: number; y1: number; x2: number; y2: number; label: string; offset?: number; vertical?: boolean }) {
+  const mx = (x1 + x2) / 2;
+  const my = (y1 + y2) / 2;
+  return (
+    <g stroke={thin} strokeWidth={0.8} fill="none">
+      <line x1={x1} y1={y1} x2={x2} y2={y2} />
+      {vertical ? (
+        <>
+          <line x1={x1 - 4} y1={y1} x2={x1 + 4} y2={y1} />
+          <line x1={x2 - 4} y1={y2} x2={x2 + 4} y2={y2} />
+        </>
+      ) : (
+        <>
+          <line x1={x1} y1={y1 - 4} x2={x1} y2={y1 + 4} />
+          <line x1={x2} y1={y2 - 4} x2={x2} y2={y2 + 4} />
+        </>
+      )}
+      <text
+        x={vertical ? mx + offset : mx}
+        y={vertical ? my : my + offset}
+        fill={ink}
+        stroke="none"
+        fontSize={9}
+        fontFamily="var(--font-sans)"
+        textAnchor="middle"
+        dominantBaseline={vertical ? "middle" : "auto"}
+        transform={vertical ? `rotate(-90 ${mx + offset} ${my})` : undefined}
+      >
+        {label}
+      </text>
+    </g>
+  );
+}
+
 export function ReceptionDeskDrawing({ revision, superseded, title = "Harbour Lane Hotel, reception desk with back panel", sheetRef = "HLH-RD-01" }: { revision: string; superseded?: boolean; title?: string; sheetRef?: string }) {
   const backH = revision === "B" ? 1900 : 2100;
   // Scale: 1 unit = 1mm / 4 in the elevation view.
@@ -17,42 +54,6 @@ export function ReceptionDeskDrawing({ revision, superseded, title = "Harbour La
   const planY = 60;
   const planD = 800 * s;
 
-  const ink = "var(--c-ink)";
-  const thin = "var(--c-ink-2)";
-
-  const Dim = ({ x1, y1, x2, y2, label, offset = 0, vertical = false }: { x1: number; y1: number; x2: number; y2: number; label: string; offset?: number; vertical?: boolean }) => {
-    const mx = (x1 + x2) / 2;
-    const my = (y1 + y2) / 2;
-    return (
-      <g stroke={thin} strokeWidth={0.8} fill="none">
-        <line x1={x1} y1={y1} x2={x2} y2={y2} />
-        {vertical ? (
-          <>
-            <line x1={x1 - 4} y1={y1} x2={x1 + 4} y2={y1} />
-            <line x1={x2 - 4} y1={y2} x2={x2 + 4} y2={y2} />
-          </>
-        ) : (
-          <>
-            <line x1={x1} y1={y1 - 4} x2={x1} y2={y1 + 4} />
-            <line x1={x2} y1={y2 - 4} x2={x2} y2={y2 + 4} />
-          </>
-        )}
-        <text
-          x={vertical ? mx + offset : mx}
-          y={vertical ? my : my + offset}
-          fill={ink}
-          stroke="none"
-          fontSize={9}
-          fontFamily="var(--font-sans)"
-          textAnchor="middle"
-          dominantBaseline={vertical ? "middle" : "auto"}
-          transform={vertical ? `rotate(-90 ${mx + offset} ${my})` : undefined}
-        >
-          {label}
-        </text>
-      </g>
-    );
-  };
 
   return (
     <svg viewBox="0 0 440 500" className="drawing" role="img" aria-label={`Reception desk drawing, revision ${revision}`}>

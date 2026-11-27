@@ -1,6 +1,6 @@
 import { LayoutGroup, useReducedMotion } from "motion/react";
 import { Camera, Check, FileText, LockSimple, PencilSimpleLine, Phone, Question, WifiSlash } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import {
   useActions,
@@ -61,11 +61,14 @@ export function JobPage() {
   const [denied, setDenied] = useState<PermissionDenied | null>(null);
   const [optimistic, setOptimistic] = useState<StageId | null>(null);
 
-  useEffect(() => {
+  // Moving to another job closes anything left open on the last one.
+  const [shownId, setShownId] = useState(id);
+  if (shownId !== id) {
+    setShownId(id);
     setModal(null);
     setDenied(null);
     setQuery(false);
-  }, [id]);
+  }
 
   const people: Person[] = peopleQ.status === "ready" ? peopleQ.data : [];
   const me = session?.person;
@@ -553,19 +556,18 @@ function QuerySheet({
   const [failed, setFailed] = useState<string | null>(null);
   const { toast } = useToast();
 
-  useEffect(() => {
-    if (!open) return;
-    try {
-      const raw = sessionStorage.getItem(draftKey);
-      const draft = raw ? (JSON.parse(raw) as { note: string; photo: boolean }) : null;
-      setNote(draft?.note ?? "");
-      setPhoto(draft?.photo ?? false);
-    } catch {
-      setNote("");
-      setPhoto(false);
+  // Each time the sheet opens, pick up any draft saved for this job.
+  const openKey = open ? draftKey : null;
+  const [loadedKey, setLoadedKey] = useState<string | null>(null);
+  if (loadedKey !== openKey) {
+    setLoadedKey(openKey);
+    if (openKey) {
+      const draft = readDraft(openKey);
+      setNote(draft.note);
+      setPhoto(draft.photo);
+      setFailed(null);
     }
-    setFailed(null);
-  }, [open, draftKey]);
+  }
 
   const submit = async () => {
     setSending(true);
@@ -691,4 +693,14 @@ function JobSkeleton({ back, id }: { back: string; id: string }) {
       </main>
     </div>
   );
+}
+
+function readDraft(key: string): { note: string; photo: boolean } {
+  try {
+    const raw = sessionStorage.getItem(key);
+    const draft = raw ? (JSON.parse(raw) as { note: string; photo: boolean }) : null;
+    return { note: draft?.note ?? "", photo: draft?.photo ?? false };
+  } catch {
+    return { note: "", photo: false };
+  }
 }

@@ -1,7 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ArrowsOut, Minus, Plus, X } from "@phosphor-icons/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Job, JobFile, Person } from "@/domain/domain";
 import { firstName, shortDate } from "@/domain/helpers";
 import { ReceptionDeskDrawing } from "./Drawing";
@@ -23,7 +23,12 @@ export function DrawingViewer({
   const [zoom, setZoom] = useState(1);
   const drawings = job.files.filter((f) => f.category === "drawing").sort((a, b) => (a.revision ?? "").localeCompare(b.revision ?? "")).reverse();
   const current = drawings.find((f) => !f.superseded);
-  useEffect(() => setZoom(1), [file?.id]);
+  // A different drawing opens at fit to screen.
+  const [zoomedFile, setZoomedFile] = useState(file?.id);
+  if (zoomedFile !== file?.id) {
+    setZoomedFile(file?.id);
+    setZoom(1);
+  }
 
   return (
     <AnimatePresence>

@@ -23,7 +23,7 @@ export function chooseSource(search: string, env: Record<string, string | undefi
   } catch {
     // Storage unavailable: the URL still decides for this load.
   }
-  let remembered: string | null = null;
+  let remembered: string | null;
   try {
     remembered = store?.getItem(KEY) ?? null;
   } catch {
