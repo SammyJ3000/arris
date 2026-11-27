@@ -6,6 +6,8 @@
 
 *Screenshots use fictional demo data.*
 
+**Live demo:** https://arris-gamma.vercel.app (sign in details are under [Setup and run](#setup-and-run)).
+
 ## What it is
 
 Arris is an offline first rebuild of a workshop job tracker, and it is still in
