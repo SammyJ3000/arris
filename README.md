@@ -276,7 +276,10 @@ npm run e2e:live  # resets the demo data before and after
 
 Screenshots and test videos are kept out of the repo.
 
+This repo was published from a private working copy, so earlier history is not
+included.
+
 ## About me
 
-I'm Sam Jordan. I design and build apps and AI tools with Claude Code. More of
-my work: https://sam-jordan-cv.vercel.app
+I'm Sam Jordan. I design and build apps and AI tools. More of my work:
+https://sam-jordan-cv.vercel.app
