@@ -20,7 +20,7 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
     "@powersync/common": "2.3.1",
-    "@powersync/react": "2.0.2",
+    "@powersync/react": "2.2.1",
     "@powersync/web": "2.4.2",
     "@radix-ui/react-dialog": "^1.1.6",
     "@supabase/supabase-js": "2.119.2",
