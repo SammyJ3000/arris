@@ -69,8 +69,6 @@ on real auth, real storage, real files, offline capable, every state designed.
 
 The content cannot be reconstructed afterwards.
 
-- Git from the first commit. Every stage tagged so it can be checked out and
-  screenshotted later. The first rough pass is kept, never amended over.
 - Screenshots and video when something breaks. Failures are the most valuable
   footage.
 - `decisions.md`: every real decision, especially where the obvious approach was
