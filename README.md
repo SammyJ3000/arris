@@ -2,6 +2,8 @@
 
 ![Arris workshop board showing eight fictional joinery jobs across the production stages](docs/images/preview.png)
 
+*Screenshots use fictional demo data.*
+
 ## What it is
 
 I'm rebuilding a workshop job tracker as a production grade app. It started life
