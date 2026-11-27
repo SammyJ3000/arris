@@ -1,5 +1,7 @@
 # Arris: a workshop job tracker
 
+[![CI](https://github.com/SammyJ3000/arris/actions/workflows/ci.yml/badge.svg)](https://github.com/SammyJ3000/arris/actions/workflows/ci.yml)
+
 ![Arris workshop board showing eight fictional joinery jobs across the production stages](docs/images/preview.png)
 
 *Screenshots use fictional demo data.*
@@ -161,8 +163,7 @@ All of these are from the reports and the decisions log.
 
 ## Setup and run
 
-You need Node 22.12 or later and npm. I ran everything on Node 26, which is
-also what CI uses.
+You need Node 22.12 or later and npm. CI runs on Node 22.
 
 ### Run it locally on sample data
 
