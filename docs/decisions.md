@@ -44,7 +44,7 @@ real apps. Name candidates come out of the design pass.
 
 **Decision:** build on direction C, Quiet Product.
 **Why:** on a phone it felt simplest and cleanest, closest to a well-made Apple
-app. Sam's test was holding it, not looking at screenshots.
+app. My test was holding it, not looking at screenshots.
 **Carry over from the review:** C's floor screens were quieter than they should be.
 Stage labels were pale and one truncated ("Deliver…"), and avatar initials clipped
 on the board. Fix both in the design system, sizing floor type to direction A's
@@ -90,8 +90,8 @@ if the layer throws or returns booleans. The in-memory source enforces the same
 rules the Postgres functions will (versions, the drawing gate, QC, roles, the
 materials warning), so the screens are written once. The later PowerSync and
 Supabase source implements the same interface.
-**Wrong turn:** I first wrote the observable `get` and `subscribe` as class
-methods and handed them to `useSyncExternalStore`, which calls them unbound.
+**Wrong turn:** the first version wrote the observable `get` and `subscribe`
+as class methods and handed them to `useSyncExternalStore`, which calls them unbound.
 Blank page, "cannot read properties of undefined". They are arrow properties
 now.
 
@@ -143,14 +143,16 @@ appears on pages the nav does not name, such as a job.
 
 ## 2026-10-15 · The strongest model only where judgement is the work
 
-**Decision:** Fable agents do design and decisions only: visual design, the design
-system, architecture and rule design, choosing between options. Building from a
-settled brief, screenshots, running tests and checking results go to Opus.
-**Why:** both Stage 2 agents were first launched on Fable for whole stages, chores
-included. Sam caught it. The database stage was stopped before it had written
-anything and restarted on Opus from the same brief; the app stage was nearly done
-and was left to finish. From here, a stage is split: the decision work is written
-down first, then built by a cheaper agent from that.
+**Decision:** agents on the strongest model available do design and decisions
+only: visual design, the design system, architecture and rule design, choosing
+between options. Building from a settled brief, screenshots, running tests and
+checking results go to agents on a faster model.
+**Why:** both Stage 2 agents were first launched on the strongest model for
+whole stages, chores included. I caught it. The database stage was stopped
+before it had written anything and restarted on the faster model from the same
+brief; the app stage was nearly done and was left to finish. From here, a stage
+is split: the decision work is written down first, then an agent builds from
+that.
 
 <!-- Stage 2b: decisions made while building the database, reviewed 2026-10-15. Full context in docs/process/reports/stage-2b.md -->
 

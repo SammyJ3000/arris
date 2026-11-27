@@ -103,7 +103,7 @@ gate), the app shows it plainly with the choices, instead of losing it.
 - **Practice project** (`arris`, London region): fictional
   data only. Build agents work against this one.
 - **Live:** not needed for a demo with fictional data. If it is ever created, only
-  Sam pushes to it, by hand.
+  I push to it, by hand.
 
 ## Security rules for anyone working on this, including AI agents
 

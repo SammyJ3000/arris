@@ -1,6 +1,6 @@
 # Design pass
 
-Three design directions, each built as a **clickable prototype** so Sam can judge
+Three design directions, each built as a **clickable prototype** so I can judge
 how it feels, not just how it looks. He picks one, and it becomes the start of the
 real build. So build it properly: real components and real tokens, not a throwaway.
 
@@ -91,7 +91,7 @@ fit a tool for joinery and fit-out workshops. Not "Joinery Tracker".
 - Fonts from Google Fonts only, with proper fallbacks. No external images; draw
   with SVG or embed as data URIs.
 - `npm run build` must produce **one self-contained `dist/index.html`** using
-  `vite-plugin-singlefile`. It gets published as a private link Sam opens on his
+  `vite-plugin-singlefile`. It gets published as a private link I open on my
   tablet and phone.
 - Use a hash route or in-app navigation so all six areas are reachable from a small,
   unobtrusive "prototype" menu.
@@ -112,7 +112,6 @@ Save screenshots to `capture/screenshots/design-pass/<your-direction>/`.
 
 - Work only in your own `design/direction-<x>/` folder, plus your screenshot folder.
   `design/shared/` is read only.
-- **Do not run git.** Sam's session commits.
 - All data stays fictional. Do not add real names, companies or phone numbers.
 - No em dashes in any user-facing copy. British English.
 

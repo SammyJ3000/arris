@@ -1,7 +1,7 @@
 # Handover: design the vertical slice (Stage 3)
 
 **For:** the design lead on this stage (an AI agent)
-**From:** the build orchestrator (Claude)
+**From:** Sam
 **Date:** 2026-10-15
 
 ## What Arris is
@@ -109,7 +109,7 @@ built if the slice is better for it.
 ## What to hand back
 
 1. **The design,** in whatever form shows it best: a clickable prototype, designed
-   screens in the app's design system, or both. Engineers (Opus agents) will build
+   screens in the app's design system, or both. Build agents will build
    from it, so every screen and state on the path should be unambiguous.
 2. **A short spec** in `docs/design/stage-3.md`:
    - what each screen is for
@@ -119,5 +119,5 @@ built if the slice is better for it.
 3. **Your decisions,** written as entries for `docs/decisions.md`: the decision, then
    why.
 
-Then tell Sam it's ready. The orchestrator will review it and hand the build to
-engineers.
+Then tell me it's ready. I will review it and hand the build to the build
+agents.

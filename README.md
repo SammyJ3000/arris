@@ -105,17 +105,22 @@ with no accounts.
 
 ## How it was built
 
-I built it with Claude Code, in stages, with AI agents doing the work and me
-reviewing each stage. The process is in `docs/`:
+I built it with AI, in stages, and the whole process is in the repo. I wrote
+the brief for each stage, made the product and design decisions, and reviewed
+every stage before the next one started, fixing what was wrong. Claude Code
+agents wrote the code to those briefs. The records are in `docs/`:
 
-- **Briefs** (`docs/process/briefs/`). Each stage starts with a written brief: what to
-  build, the hard rules, what done means and what to report.
-- **Reports** (`docs/process/reports/`). Each agent writes back what it built, what
-  failed and how it fixed it, what is left, and the test results.
+- **Briefs** (`docs/process/briefs/`). I start each stage with a written brief:
+  what to build, the hard rules, what done means and what to report.
+- **Reports** (`docs/process/reports/`). Each agent writes back what it built,
+  what failed and how it was fixed, what is left, and the test results.
 - **Decisions** (`docs/decisions.md`). Every real decision with its reason,
   including the wrong turns.
 - **Handovers** (`docs/process/handovers/`). What the next stage needs to know.
-- **Build log** (`docs/build-log.md`). Time per stage, and review follow ups.
+- **Build log** (`docs/build-log.md`). What each stage produced, and the follow
+  ups from my reviews.
+
+`docs/process/README.md` explains how these fit together.
 
 Tests gate every stage. By the end of Stage 2:
 
@@ -127,16 +132,16 @@ Tests gate every stage. By the end of Stage 2:
 | Row level security, run as real users against the practice project | 96 |
 | PowerSync sync rules and client schema, offline | 39 |
 
-Some working rules came out of the process. The strongest model does design and
-decisions only; building from a settled brief goes to a cheaper one. Agents
-never read `.env` files or handle secret keys, and `.claude/settings.json`
+Two working rules came out of the process. The strongest model available does
+the judgement work, design and decisions, and a faster one builds from a
+settled brief. Agents never read `.env` files or handle secret keys, and `.claude/settings.json`
 enforces that for any Claude Code session in this folder.
 
 ## What broke, and how it was fixed
 
 All of these are from the reports and the decisions log.
 
-- **Blank page on the first data layer.** I passed class methods to React's
+- **Blank page on the first data layer.** It passed class methods to React's
   `useSyncExternalStore`, which calls them unbound. They are arrow properties
   now.
 - **Deep links bounced to sign in.** The route guard redirected before the
