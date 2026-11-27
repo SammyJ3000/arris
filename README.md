@@ -1,5 +1,7 @@
 # Arris: a workshop job tracker
 
+![Arris workshop board showing eight fictional joinery jobs across the production stages](docs/images/preview.png)
+
 ## What it is
 
 I'm rebuilding a workshop job tracker as a production grade app. It started life
@@ -36,6 +38,16 @@ In progress. Stages 0 to 2 are done. Stage 3 is in design.
 What is missing today: creating a job, uploading and approving drawings, the
 Quality Check screen, delivery paperwork and the idle lock on tablets. The
 Stage 3 handover in `docs/handovers/stage-3-design.md` lists it all.
+
+## Screenshots
+
+The tablet view on the bench, signed in as Tom with his next job:
+
+![Arris tablet view showing the next job for a bench joiner with a one tap done button](docs/images/tablet.png)
+
+A job page, with the current drawing, the superseded revision and the site details:
+
+![Arris job page for a fictional reception desk showing stages, drawing revisions and site details](docs/images/job.png)
 
 ## How it works
 
