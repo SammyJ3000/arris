@@ -77,11 +77,11 @@ Explicitly avoid the AI defaults:
 
 - Inter, Space Grotesk, or the system font as the main face
 - Stock shadcn/ui looks, `rounded-lg` and a soft shadow on everything
-- Purple to blue gradients, near-black with one acid-green accent, cream with a
+- Purple to blue gradients, near black with one acid green accent, cream with a
   terracotta serif
 - Emoji as icons. Pick one icon set deliberately and use it consistently
 - Everything centred
-- Motion everywhere. Use one signature moment and quiet micro-interactions,
+- Motion everywhere. Use one signature moment and quiet micro interactions,
   and respect `prefers-reduced-motion`
 
 ### Who uses it, and where
@@ -101,9 +101,9 @@ Use the shared data in `shared/sample-data.ts` and the types in `shared/domain.t
 **Copy them into your project** rather than editing the originals. Keep all state
 in memory; there is no back end yet.
 
-#### 1. Tablet sign-in, shared device (tablet, 1180 × 820)
+#### 1. Tablet sign in, shared device (tablet, 1180 × 820)
 The tablet stays signed in as the workshop. A person taps their name, then enters a
-four-digit PIN. Show the wrong-PIN state. Include a small "Office sign-in" route for
+four digit PIN. Show the wrong PIN state. Include a small "Office sign in" route for
 the manager. PIN for every person in the prototype is **1234**.
 
 #### 2. My Jobs (tablet, operative "Tom Ashworth")
@@ -114,7 +114,7 @@ job on. Show an offline indicator state.
 #### 3. Job page (tablet, job J-1042)
 - Where the job is in the stages, clearly
 - The drawing: current revision C, with revision B shown as superseded. Opening it
-  shows a full-screen viewer. Render a simple technical drawing of a reception desk
+  shows a full screen viewer. Render a simple technical drawing of a reception desk
   as SVG for now; the real app will use PDFs
 - Cutting list where each component's status can be advanced with a tap
 - "Raise a drawing query" from the floor: a sheet with a note and an optional photo,
@@ -140,7 +140,7 @@ manager action), and an error with a way out.
 ### Product name
 
 Propose a product name and a simple wordmark for your direction. The name should
-fit a tool for joinery and fit-out workshops. Not "Joinery Tracker".
+fit a tool for joinery and fit out workshops. Not "Joinery Tracker".
 
 ### Build
 
@@ -150,10 +150,10 @@ fit a tool for joinery and fit-out workshops. Not "Joinery Tracker".
   durations and easings) as CSS variables in one place, and use them everywhere.
 - Fonts from Google Fonts only, with proper fallbacks. No external images; draw
   with SVG or embed as data URIs.
-- `npm run build` must produce **one self-contained `dist/index.html`** using
+- `npm run build` must produce **one self contained `dist/index.html`** using
   `vite-plugin-singlefile`. It gets published as a private link I open on my
   tablet and phone.
-- Use a hash route or in-app navigation so all six areas are reachable from a small,
+- Use a hash route or in app navigation so all six areas are reachable from a small,
   unobtrusive "prototype" menu.
 
 ### Check your work
@@ -173,7 +173,7 @@ Save screenshots to `capture/screenshots/design-pass/<your-direction>/`.
 - Work only in your own `design/direction-<x>/` folder, plus your screenshot folder.
   `design/shared/` is read only.
 - All data stays fictional. Do not add real names, companies or phone numbers.
-- No em dashes in any user-facing copy. British English.
+- No em dashes in any user facing copy. British English.
 
 ### Deliver
 
