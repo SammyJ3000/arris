@@ -38,7 +38,7 @@ changes made with no signal that sync when it returns.
 | Stage | State |
 |---|---|
 | 0. Setup: brief, domain model, fictional sample workshop | Done |
-| 1. Design pass: three directions as clickable prototypes | Done. Direction C, "Arris", chosen |
+| 1. Design pass: three directions as clickable prototypes (`design/DESIGN-PASS.md`) | Done. Direction C, "Arris", chosen |
 | 2a. App foundations: design system, routes, every screen state | Done |
 | 2b. Data foundations: schema, rules, PIN sign in, RLS tests | Done |
 | 2c. Offline sync with PowerSync, live end to end tests | Done |
@@ -277,7 +277,7 @@ npm run e2e:live  # resets the demo data before and after
 | `app/` | The app, its unit tests and Playwright tests |
 | `supabase/` | Migrations, the `pin-login` Edge Function, RLS tests |
 | `powersync/` | Sync config and its tests |
-| `design/` | The design pass: three clickable prototypes and the shared sample data |
+| `design/` | The design pass: a summary of the three directions, screenshots and the shared sample data. The prototypes are on the [`design-pass` branch](https://github.com/SammyJ3000/arris/tree/design-pass/design) |
 | `docs/` | Brief, domain model, architecture, principles, decisions, briefs, reports, handovers |
 
 The README screenshots are in `docs/images/`. Test videos and the working
